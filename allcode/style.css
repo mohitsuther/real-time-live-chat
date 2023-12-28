@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chat__container{
+    height: 100vh;
+    width: 100%;
+              
+    background: url("back-chat.webp");
+    background-size: cover;
+    background-clip: border-box;
+    position: relative;
+
+}
+.top{
+    height: 65px;
+    display: flex;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(10, 29, 62);
+    border-radius: 20px 20px;
+    
+}
+h1{
+    color: aliceblue;
+    text-align: left;
+    margin-left: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+#user_name{
+    font-size: 1.4rem;
+    color: aliceblue;
+    margin: 20px;
+}
+.massagearea{
+    height: 82vh;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+        
+    
+}
+.massagearea::-webkit-scrollbar{
+    display: none;
+}
+.message{
+   
+    color:white;
+  
+    padding: 20px;
+    max-width: 25%;
+}
+.incomming{
+    background: transparent;
+    margin: 4px;
+    border-radius: 20px;
+    max-width: 25%;
+    
+}
+.massagearea h3{
+    margin-left: 20px;
+}
+.incomming p{
+    
+        width: 90%;
+        background-color: #106655;
+        border-radius: 20px;
+        margin: 8px;
+        padding: 20px;
+}
+.messag{
+    padding: 20px;
+
+}
+p{
+    padding: 20px;
+    background-color: #144d42;
+    border-radius: 20px;
+    margin: 8px;
+}
+.outgoing{
+    background: transparent;
+    margin: 4px;
+    border-radius: 20px;
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    
+}
+.outgoing p{
+    width: 90%;
+    background-color: #228d79;
+    border-radius: 20px;
+    margin: 4px;
+    padding: 20px;
+}
+.textsend{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    bottom: 0%;
+    background: transparent;
+    align-items: center;
+    padding-left: 20px;
+    
+}
+textarea{
+    height: 40px;
+    width: 270px;
+    font-size: 1.4rem;
+    padding-top:7px ;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+button{
+    height: 40px;
+    width: 60px;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-inline: 10px;
+    
+}
+
+.username1 {
+    font-weight: bold;
+    color: #008000;
+}
+@media (max-width:1000px) {
+    .outgoing,.incomming{
+        max-width: 70%;
+    }
+    .message{
+        padding: 5;
+    }
+}
